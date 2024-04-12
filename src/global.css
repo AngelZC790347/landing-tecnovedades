@@ -1,0 +1,12 @@
+:root{
+    --bg-color-1:#5A23F1;
+    --bg-color-2:#1E293B;
+    --bg-color-3:rgb(58,74 ,235 );
+    --fg-color-1:#FFFFFF;
+    --fg-color-2:#000;
+    --fg-color-3:#FF9000;    
+    --fg-color-4:rgb(115,209,227);
+}
+*{
+    color: var(--fg-color-1);
+}

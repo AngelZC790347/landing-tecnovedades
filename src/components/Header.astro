@@ -1,0 +1,71 @@
+---
+import { } from "flowbite"
+---
+
+<header class="header">
+    <main>
+        <header class="">
+            <img width="180px" src="logo-fill-white.png" alt="Tecnovedades">    
+        </header>
+        <main class="w-full flex  gap-9">
+            <img width="150px" src="avatar.png" alt="">
+            <ul class="">
+                <h1 class="text-xl mb-6 uppercase">Te ayudamos a darte a conocer en internet</h1>
+                <li class="my-2 text-sm">Paginas Web respoisve y Seo optimizacion</li>
+                <li class="my-2 text-sm">Landing pages para integrar con redes</li>
+                <li class="my-2 text-sm">Panel autoadminstrable</li>
+                <li class="my-2 text-sm">Servicios integrados para Adds</li>
+            </ul>
+
+        </main>        
+    </main>
+    <button class=" border-solid border-2 w-52 py-1 rounded-md">Descarga nuestra guia</button>
+    <section class="w-full">        
+        <form action="" class="text-lg text-[var(--fg-color-1)]  w-[90%] mx-auto shadow-xl bg-[var(--fg-color-2)] p-10 rounded-md">
+            <p class="text-inherit" class="my-5 ">
+                <label class="text-inherit" for="">
+                Nombres y Apellidos <br>
+                <input type="text" placeholder="Exmaple">
+                </label>          
+            </p>
+            <p class="text-inherit">
+              <label class="text-inherit" for="">
+                Email <br>
+                <input type="email" placeholder="example@exaple.com">
+                </label>
+            </p>
+        </form>
+    </section>
+</header>
+<style scoped>
+    .header{
+
+        display: flex;
+/*        flex-direction: column;  */
+        background-color: transparent;
+/*        justify-content: center;*/
+        align-items: center;
+        gap:40px;
+        background-image: linear-gradient(180deg,var(--bg-color-1)40%,var(--bg-color-2)100%);                  
+        & > main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: inherit;            
+        }
+        
+        input{
+            width: 100%;
+        }
+            
+        @media (max-width: 850px) {
+            padding: 30px 40px;
+            flex-direction: column;
+            h1{
+                width: 100% !important;
+            }
+            gap:60px;
+        }
+    }
+
+</style>
