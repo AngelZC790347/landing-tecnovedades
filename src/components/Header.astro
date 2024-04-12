@@ -1,13 +1,13 @@
 ---
-import { } from "flowbite"
+import {} from "flowbite"
 ---
 
-<header class="header">
-    <main>
-        <header class="">
-            <img width="180px" src="logo-fill-white.png" alt="Tecnovedades">    
+<header class="bg-gradient-to-b from-[var(--bg-color-1)] from-40% to-[var(--bg-color-2)]">
+    <main class=" px-12">
+        <header class="ms-12">
+            <img width="160px" src="logo-fill-white.png" alt="Tecnovedades">    
         </header>
-        <main class="w-full flex  gap-9">
+        <main class=" flex justify-end gap-9">
             <img width="150px" src="avatar.png" alt="">
             <ul class="">
                 <h1 class="text-xl mb-6 uppercase">Te ayudamos a darte a conocer en internet</h1>
@@ -17,55 +17,27 @@ import { } from "flowbite"
                 <li class="my-2 text-sm">Servicios integrados para Adds</li>
             </ul>
 
-        </main>        
+        </main>
+    <button class="mx-auto border-solid border-2 w-52 py-1 rounded-md">Descarga nuestra guia</button> 
     </main>
-    <button class=" border-solid border-2 w-52 py-1 rounded-md">Descarga nuestra guia</button>
-    <section class="w-full">        
-        <form action="" class="text-lg text-[var(--fg-color-1)]  w-[90%] mx-auto shadow-xl bg-[var(--fg-color-2)] p-10 rounded-md">
-            <p class="text-inherit" class="my-5 ">
-                <label class="text-inherit" for="">
-                Nombres y Apellidos <br>
-                <input type="text" placeholder="Exmaple">
-                </label>          
-            </p>
-            <p class="text-inherit">
-              <label class="text-inherit" for="">
-                Email <br>
-                <input type="email" placeholder="example@exaple.com">
-                </label>
-            </p>
-        </form>
+    
+    <section>        
+        
+    <form class="max-w-sm mx-auto">
+      <label for="email-address-icon" class="block mb-2 text-base font-medium text-inherit dark:text-white">Solicita una cita ingresando tu email</label>
+      <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+          </svg>
+        </div>
+        <div class="flex">
+        <input type="text" id="email-address-icon" class="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
+        <input type="submit" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-sm text-sm px-5 py-2.5 text-center me-2"/>
+
+        </div>
+      </div>
+    </form>
     </section>
 </header>
-<style scoped>
-    .header{
-
-        display: flex;
-/*        flex-direction: column;  */
-        background-color: transparent;
-/*        justify-content: center;*/
-        align-items: center;
-        gap:40px;
-        background-image: linear-gradient(180deg,var(--bg-color-1)40%,var(--bg-color-2)100%);                  
-        & > main{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            color: inherit;            
-        }
-        
-        input{
-            width: 100%;
-        }
-            
-        @media (max-width: 850px) {
-            padding: 30px 40px;
-            flex-direction: column;
-            h1{
-                width: 100% !important;
-            }
-            gap:60px;
-        }
-    }
-
-</style>

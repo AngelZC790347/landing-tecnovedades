@@ -1,27 +1,32 @@
-<section>
-        
-        <h1>Descubre como impular tus ventas a traves de interntet</h1>
-        <button>Descarga nuestra guia</button>
+<section class="shadow-xl px-9">        
+    <main>
+    <slot name="title-bn"/>
+    <slot/>
+    <button type="button" class="w-52 mx-auto text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-md text-sm px-5 py-2.5 text-center ms-7 ">Descarga nuestra guia</button>
+    </main>
+    <aside><slot name="info-bn"/></aside>
 </section>
 <style scoped>
  section{
-            display: flex;
-            flex-direction: column;
-            gap:4em;            
-            width: 70%;
-            color:var(--fg-color-1);
-            button{
-                width: 15em;
-                padding: 10px 8px;
-                border: solid 1px var(--fg-color-1);
-                &:hover{
-                    background: var(--fg-color-1);
-                    color: var(--bg-color-2);
-                }
-            }
-            h1{
-                width: 70%;
-                font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    gap:3em;
+    padding-block: 40px;
+    margin: 0 auto;            
+    width: 70%;            
+    color:var(--fg-color-2);
+    *:not(button){        
+        color: inherit;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 
-            }         
+    }
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
+}         
+    
 </style>

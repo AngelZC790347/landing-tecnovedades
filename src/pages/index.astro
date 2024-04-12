@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro"
+ import BannerPromotion from "../components/BannerPromotion.astro"
 import '../global.css'
 ---
 
@@ -14,6 +15,20 @@ import '../global.css'
 	</head>
 	<body>
 		<Header></Header>
+		<main class="flex flex-col justify-center py-16 gap-6 align-middle">
+			<BannerPromotion>
+			<h1 class="text-2xl mx-auto" slot="title-bn">Descubre como afainzar mas clientes con una pagina web</h1>
+			<ul > 
+			    <li> Haz un pagina web optimizada para SEO</li>
+			    <li>Consigue una landing para retener a tus clients</li>
+			    <li>Haz una pagina amigable e intuitiva para los clientes</li>
+			</ul>
+			<video class="w-96 mx-auto" slot="info-bn" controls>
+			  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+			</BannerPromotion>			
+		</main>
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 	</body>
 </html>
