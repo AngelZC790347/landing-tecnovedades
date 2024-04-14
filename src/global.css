@@ -2,11 +2,15 @@
     --bg-color-1:#5A23F1;
     --bg-color-2:#1E293B;
     --bg-color-3:rgb(58,74 ,235 );
+    --bg-color-4:#f6f7f9;
     --fg-color-1:#FFFFFF;
-    --fg-color-2:#000;
+    --fg-color-2:#222;
     --fg-color-3:#FF9000;    
     --fg-color-4:rgb(115,209,227);
 }
+body{
+    background-color: var(--bg-color-4);
+}
 *{
-    color: var(--fg-color-1);
+    color: var(--fg-color-2);
 }

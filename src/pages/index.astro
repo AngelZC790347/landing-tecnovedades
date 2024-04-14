@@ -14,17 +14,21 @@ import '../global.css'
 		<title>Astro</title>
 	</head>
 	<body>
+        <nav class=" sticky w-full border-solid border-b-[#ececec] border-b-[1px] top-0 z-10 ">
+            <header class="w-full bg-[var(--fg-color-1)] py-2">
+              <img width="180px" src="logo.jpg" alt="Tecnovedades" class="ms-[20%]" />
+            </header>
+          </nav>
 		<Header></Header>
-		<main class="flex flex-col justify-center py-16 gap-6 align-middle">
-			<BannerPromotion>
-			<h1 class="text-2xl mx-auto" slot="title-bn">Descubre como afainzar mas clientes con una pagina web</h1>
-			<ul > 
-			    <li> Haz un pagina web optimizada para SEO</li>
-			    <li>Consigue una landing para retener a tus clients</li>
-			    <li>Haz una pagina amigable e intuitiva para los clientes</li>
-			</ul>
-			<video class="w-96 mx-auto" slot="info-bn" controls>
-			  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+		<main class="flex flex-col justify-center py-16 gap-6 align-middle md:max-w-[1200px] mx-auto">
+			<BannerPromotion reverse btnTittle="Conoce mas de nuestros proyectos">
+			<h1 class="text-4xl font-semibold mx-auto" slot="title-bn">Descubre como afainzar mas clientes a travez una pagina web</h1>
+			<div class="font-medium flex flex-col gap-5 text-pretty text-lg"> 
+                <p class="text-inherit">Te contamos cómo funciona la publicidad en buscadores centrándonos en Google Ads, la plataforma publicitaria de Google. </p>
+                <p> Te adelantamos que las campañas en Google Ads son muy útiles para cualquier fase del funnel. Aunque son ideales para la fase de conversión, es decir, la fase final del embudo, llamada BOFU (Bottom of the Funnel).</p>
+			</div>
+			<video class=" mx-auto" slot="info-bn" controls>
+			  <source src="guia.mp4" type="video/mp4">
 			  Your browser does not support the video tag.
 			</video>
 			</BannerPromotion>			
@@ -32,3 +36,6 @@ import '../global.css'
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 	</body>
 </html>
+<style>
+    
+</style>

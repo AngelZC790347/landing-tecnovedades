@@ -1,32 +1,21 @@
-<section class="shadow-xl px-9">        
-    <main>
-    <slot name="title-bn"/>
-    <slot/>
-    <button type="button" class="w-52 mx-auto text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-md text-sm px-5 py-2.5 text-center ms-7 ">Descarga nuestra guia</button>
-    </main>
-    <aside><slot name="info-bn"/></aside>
-</section>
-<style scoped>
- section{
-    display: flex;
-    flex-direction: column;
-    gap:3em;
-    padding-block: 40px;
-    margin: 0 auto;            
-    width: 70%;            
-    color:var(--fg-color-2);
-    *:not(button){        
-        color: inherit;
-    }
-    main{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+---
+interface Props{
+    btnTittle:string,
+    reverse:boolean
+}
+import PrimaryButton from "../components/controls/PrimaryButton.astro"
 
-    }
-    @media only screen and (min-width: 1024px) {
-        flex-direction: row;
-    }
-}         
-    
-</style>
+
+---
+<section class=" px-10 flex flex-col py-7 md:flex-row-reverse w-full gap-28 ">        
+    <main class="flex flex-col gap-16 w-full content-center justify-center">
+    <slot name="title-bn" />
+    <slot/>
+        <div class="text-white ">
+            <PrimaryButton>{Astro.props.btnTittle}</PrimaryButton>
+        </div>
+    </main>
+    <aside class="my-auto w-full"><slot name="info-bn"/></aside>
+</section>
+
+ 

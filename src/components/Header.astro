@@ -1,43 +1,163 @@
 ---
-import {} from "flowbite"
+import PrimaryButton from "./controls/PrimaryButton.astro";
 ---
 
-<header class="bg-gradient-to-b from-[var(--bg-color-1)] from-40% to-[var(--bg-color-2)]">
-    <main class=" px-12">
-        <header class="ms-12">
-            <img width="160px" src="logo-fill-white.png" alt="Tecnovedades">    
-        </header>
-        <main class=" flex justify-end gap-9">
-            <img width="150px" src="avatar.png" alt="">
-            <ul class="">
-                <h1 class="text-xl mb-6 uppercase">Te ayudamos a darte a conocer en internet</h1>
-                <li class="my-2 text-sm">Paginas Web respoisve y Seo optimizacion</li>
-                <li class="my-2 text-sm">Landing pages para integrar con redes</li>
-                <li class="my-2 text-sm">Panel autoadminstrable</li>
-                <li class="my-2 text-sm">Servicios integrados para Adds</li>
-            </ul>
-
-        </main>
-    <button class="mx-auto border-solid border-2 w-52 py-1 rounded-md">Descarga nuestra guia</button> 
+<header
+  class="relative flex flex-col content-center justify-center gap-28 md:flex-row  pb-24 py-24 md:max-w-[1127px] mx-auto px-7"
+>
+  <main class="md:w-2/5 max-w-md flex flex-col gap-12 mx-auto">
+    <main class="flex justify-center gap-9">
+      <ul class="list-image-[url(checkmark-png-25979.png)]">
+        <h1 class="text-2xl font-bold mb-11 capitalize">
+          ¿Te encuentras lidiando con el desafío de aumentar la visibilidad y
+          ventas de tu empresa?
+        </h1>
+        <p class="font-semibold text-[18px] mb-10">
+          Nuestra guía te ofrece soluciones prácticas, enfocándonos en el arte
+          de la simplicidad para maximizar tus resultados con menor esfuerzo.
+          Totalmente gratis
+        </p>
+        <li class="my-4 text-[18px] ms-4">
+          Como entender las acciones en redes sociales
+        </li>
+        <li class="my-4 text-[18px] ms-4">
+          Como aumentar la visibilidad y ventas
+        </li>
+        <li class="my-4 text-[18px] ms-4">
+          Como expandirte por medio de la web
+        </li>
+        <li class="my-4 text-[18px] ms-4">Como analizar y adaparte</li>
+      </ul>
     </main>
+  </main>
+  <section class="my-auto xl:w-1/2 bg-[url()]">
+    <!-- <img width="200px" src="avatar.png" alt="" /> -->
+    <form class="max-w-md mx-auto flex flex-col gap-6">
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_first_name"
+                id="floating_first_name"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_first_name"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Nombre</label
+              >
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_last_name"
+                id="floating_last_name"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_last_name"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Apellido</label
+              >
+            </div>
+          </div>
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="email"
+          name="floating_email"
+          id="floating_email"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_email"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Correo</label
+        >
+      </div>
     
-    <section>        
-        
-    <form class="max-w-sm mx-auto">
-      <label for="email-address-icon" class="block mb-2 text-base font-medium text-inherit dark:text-white">Solicita una cita ingresando tu email</label>
-      <div class="relative">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-          </svg>
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="tel"
+          name="phone-number"
+          id="phone-number"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+        />
+        <label
+          for="phone-number"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Telefono:*</label
+        >
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            name="floating_phone"
+            id="floating_phone"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_phone"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Telefono Comercial :</label
+          >
         </div>
-        <div class="flex">
-        <input type="text" id="email-address-icon" class="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
-        <input type="submit" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-sm text-sm px-5 py-2.5 text-center me-2"/>
-
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="floating_company"
+            id="floating_company"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_company"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Nombre de Empresa</label
+          >
         </div>
       </div>
+      <div class="text-lg text-white *:uppercase *:w-full *:rounded-lg">
+        <PrimaryButton>Solicitar Guia Gratis</PrimaryButton>
+      </div>
+      
+      <p><span class="text-xs">In submitting this form, you agree to receive information from Cloudflare related to our products, events, and special offers. You can unsubscribe from such messages at any time. We never sell your data, and we value your privacy choices. Please see our <a class="text-[var(--bg-color-3)] underline   ">Privacy Policy</a> for information.</span></p>
     </form>
-    </section>
+  </section>
 </header>
+
+<style>
+  h1 {
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      Fira Sans,
+      Droid Sans,
+      Helvetica Neue,
+      sans-serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-weight: 600 !important;
+    color: #000 !important;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    font-size: 40px;
+  }
+</style>
